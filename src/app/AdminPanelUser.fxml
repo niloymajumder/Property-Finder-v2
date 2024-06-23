@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddUserController">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="937.0" layoutY="-1.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@9be5f8393bb9e79d09a42a64afc63934.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="552.0" layoutY="442.0" mnemonicParsing="false" onAction="#addApartment" prefHeight="38.0" prefWidth="227.0" style="-fx-background-color: #FFFFFF;" text="Add Appartment" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text fill="#e8e8e8" layoutX="341.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Panel" wrappingWidth="417.0">
+         <font>
+            <Font name="Agency FB Bold" size="55.0" />
+         </font>
+      </Text>
+      <Button layoutX="284.0" layoutY="442.0" mnemonicParsing="false" onAction="#addCommercialSpace" prefHeight="38.0" prefWidth="257.0" style="-fx-background-color: #FFFFFF;" text="Add Commercial Space" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutY="96.0" opacity="0.7" prefHeight="332.0" prefWidth="390.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Button layoutX="-31.0" layoutY="95.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="169.0" style="-fx-background-color: #FFFFFF;" text="Name">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="-31.0" layoutY="139.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="161.0" style="-fx-background-color: #FFFFFF;" text="Age">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Text fill="#5e5e5e" layoutX="156.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add User" wrappingWidth="208.0">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="-20.0" layoutY="185.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="147.0" style="-fx-background-color: #FFFFFF;" text="Admin">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="nameField" layoutX="146.0" layoutY="102.0" prefHeight="14.0" prefWidth="227.0" />
+            <TextField fx:id="ageField" layoutX="146.0" layoutY="147.0" prefHeight="14.0" prefWidth="227.0" />
+            <CheckBox fx:id="adminCheck" layoutX="146.0" layoutY="196.0" mnemonicParsing="false" />
+            <Button layoutX="102.0" layoutY="251.0" mnemonicParsing="false" onAction="#enterUser" prefHeight="48.0" prefWidth="187.0" style="-fx-background-color: #FFFFFF;" text="ADD">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="14.0" layoutY="442.0" mnemonicParsing="false" onAction="#switchToApartmentOverview" prefHeight="38.0" prefWidth="257.0" style="-fx-background-color: #FFFFFF;" text="Switch Back" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="422.0" layoutY="96.0" opacity="0.85" prefHeight="332.0" prefWidth="487.0">
+        <columns>
+          <TableColumn fx:id="idTable" prefWidth="101.0" text="ID" />
+          <TableColumn fx:id="nameTable" prefWidth="148.0" text="Name" />
+            <TableColumn fx:id="ageTable" prefWidth="131.0" text="Age" />
+            <TableColumn fx:id="adminTable" prefWidth="105.0" text="Admin" />
+        </columns>
+      </TableView>
+      <Button layoutX="796.0" layoutY="36.0" mnemonicParsing="false" onAction="#switchToLogInOverview" prefHeight="29.0" prefWidth="112.0" style="-fx-background-color: #FFFFFF;" text="Log Out" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="788.0" layoutY="442.0" mnemonicParsing="false" onAction="#viewAllUser" prefHeight="38.0" prefWidth="123.0" style="-fx-background-color: #FFFFFF;" text="View All" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

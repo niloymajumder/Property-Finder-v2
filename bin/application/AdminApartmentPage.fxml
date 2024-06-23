@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminApartmentController">
+   <children>
+      <AnchorPane>
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0">
+               <children>
+                  <ImageView fitHeight="720.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/bg.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#e8e3e3" layoutX="36.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Property" wrappingWidth="220.13671875">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#d3f985" layoutX="38.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finder." wrappingWidth="163.0">
+                     <font>
+                        <Font name="Lato Black" size="34.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="nextBtn" layoutX="994.0" layoutY="32.0" onAction="#nextPage" prefHeight="51.0" prefWidth="37.0">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Java-Prog/PropertyManagementApplication/src/img/forward-arrow-white.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label layoutX="424.0" layoutY="33.0" prefHeight="53.0" prefWidth="317.0" text="Admin Dashboard" textFill="#d3f985">
+                     <font>
+                        <Font name="Lato Black" size="34.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="prevBtn" layoutX="921.0" layoutY="30.0" onAction="#prevPage" prefHeight="51.0" prefWidth="55.0">
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Java-Prog/PropertyManagementApplication/src/img/back-arrow%20-white.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <AnchorPane layoutY="97.0" prefHeight="625.0" prefWidth="1086.0">
+                     <children>
+                        <Button layoutX="800.0" layoutY="529.0" mnemonicParsing="false" onAction="#addUser" prefHeight="44.0" prefWidth="124.0" style="-fx-background-color: #7B61FF;" text="Add User" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="937.0" layoutY="529.0" mnemonicParsing="false" onAction="#viewAllUser" prefHeight="44.0" prefWidth="124.0" style="-fx-background-color: #D3F985;" text="Preview">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="574.0" layoutY="529.0" mnemonicParsing="false" onAction="#addCommercialSpace" prefHeight="44.0" prefWidth="211.0" style="-fx-background-color: #7B61FF;" text="Add Commercial Spaces" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="14.0" layoutY="446.0" mnemonicParsing="false" onAction="#enterApartment" prefHeight="44.0" prefWidth="385.0" style="-fx-background-color: #D3F985;" text="Add Apartment">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="12.0" layoutY="142.0" prefHeight="239.0" prefWidth="388.0">
+                     <children>
+                        <HBox blendMode="MULTIPLY" layoutX="3.0" layoutY="1.0" opacity="0.31" prefHeight="381.0" prefWidth="385.0" style="-fx-background-color: #020200;" />
+                        <Label layoutX="20.0" layoutY="82.0" prefHeight="38.0" prefWidth="104.0" text="Location:" textFill="WHITE">
+                           <font>
+                              <Font name="Lato SemiBold" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="locationField" layoutX="160.0" layoutY="83.0" prefHeight="35.0" prefWidth="211.0" promptText="Enter Loaction" />
+                        <Label layoutX="20.0" layoutY="126.0" prefHeight="38.0" prefWidth="124.0" text="Floor Space:" textFill="WHITE">
+                           <font>
+                              <Font name="Lato SemiBold" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="floorField" layoutX="160.0" layoutY="128.0" prefHeight="35.0" prefWidth="211.0" promptText="Enter Floor Space" />
+                        <Label layoutX="21.0" layoutY="309.0" prefHeight="38.0" prefWidth="124.0" text="Generator:" textFill="WHITE">
+                           <font>
+                              <Font name="Lato SemiBold" size="21.0" />
+                           </font>
+                        </Label>
+                        <CheckBox fx:id="checkGenerator" layoutX="164.0" layoutY="319.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="57.0" textFill="WHITE">
+                           <font>
+                              <Font name="Lato SemiBold" size="16.0" />
+                           </font>
+                        </CheckBox>
+                        <Label layoutX="84.0" layoutY="5.0" prefHeight="53.0" prefWidth="247.0" text="Add Apartment" textFill="#d3f985">
+                           <font>
+                              <Font name="Lato Black" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="173.0" prefHeight="38.0" prefWidth="124.0" text="Bedrooms:" textFill="WHITE">
+                           <font>
+                              <Font name="Lato SemiBold" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="bedField" layoutX="160.0" layoutY="174.0" prefHeight="35.0" prefWidth="211.0" promptText="Enter No. of Bedrooms" />
+                        <Label layoutX="20.0" layoutY="218.0" prefHeight="38.0" prefWidth="124.0" text="Washrooms:" textFill="WHITE">
+                           <font>
+                              <Font name="Lato SemiBold" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="washroomField" layoutX="160.0" layoutY="220.0" prefHeight="35.0" prefWidth="211.0" promptText="Enter No. of Washrooms" />
+                        <Label layoutX="20.0" layoutY="264.0" prefHeight="38.0" prefWidth="124.0" text="Rent:" textFill="WHITE">
+                           <font>
+                              <Font name="Lato SemiBold" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="rentField" layoutX="160.0" layoutY="266.0" prefHeight="35.0" prefWidth="211.0" promptText="Enter Rent Amount" />
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="mainTable" layoutX="432.0" layoutY="142.0" opacity="0.85" prefHeight="449.0" prefWidth="631.0">
+                     <columns>
+                        <TableColumn fx:id="tableID" prefWidth="62.0" text="ID" />
+                        <TableColumn fx:id="tableLocation" prefWidth="88.0" text="Location" />
+                        <TableColumn fx:id="tableFloorSpace" prefWidth="98.0" text="Floor Space" />
+                        <TableColumn fx:id="tableBedRooms" prefWidth="100.0" text="Bedrooms" />
+                        <TableColumn fx:id="tableWashrooms" prefWidth="92.0" text="Washrooms" />
+                        <TableColumn fx:id="tableGenerator" prefWidth="103.0" text="Generator" />
+                        <TableColumn fx:id="tableRent" prefWidth="87.0" text="Rent" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

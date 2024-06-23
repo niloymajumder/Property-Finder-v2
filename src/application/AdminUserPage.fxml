@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminUserController">
+   <children>
+      <AnchorPane layoutY="1.0">
+         <children>
+            <AnchorPane layoutY="-1.0">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0">
+                     <children>
+                        <ImageView fitHeight="720.0" fitWidth="1080.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bg.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#e8e3e3" layoutX="36.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Property" wrappingWidth="220.13671875">
+                           <font>
+                              <Font name="System Bold" size="34.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#d3f985" layoutX="38.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finder." wrappingWidth="163.0">
+                           <font>
+                              <Font name="Lato Black" size="34.0" />
+                           </font>
+                        </Text>
+                        <JFXButton fx:id="nextBtn" layoutX="994.0" layoutY="32.0" onAction="#nextPage" prefHeight="51.0" prefWidth="37.0">
+                           <graphic>
+                              <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Java-Prog/PropertyManagementApplication/src/img/forward-arrow-white.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Label layoutX="424.0" layoutY="33.0" prefHeight="53.0" prefWidth="317.0" text="Admin Dashboard" textFill="#d3f985">
+                           <font>
+                              <Font name="Lato Black" size="34.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="prevBtn" layoutX="921.0" layoutY="30.0" onAction="#prevPage" prefHeight="51.0" prefWidth="55.0">
+                           <graphic>
+                              <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Java-Prog/PropertyManagementApplication/src/img/back-arrow%20-white.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <AnchorPane layoutY="97.0" prefHeight="625.0" prefWidth="1086.0">
+                           <children>
+                              <Button layoutX="944.0" layoutY="529.0" mnemonicParsing="false" onAction="#viewAllUser" prefHeight="44.0" prefWidth="124.0" style="-fx-background-color: #D3F985;" text="Preview">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="519.0" layoutY="529.0" mnemonicParsing="false" onAction="#addApartment" prefHeight="44.0" prefWidth="180.0" style="-fx-background-color: #7B61FF;" text="Add Apartments" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="15.0" layoutY="390.0" mnemonicParsing="false" onAction="#enterUser" prefHeight="44.0" prefWidth="385.0" style="-fx-background-color: #D3F985;" text="Add User">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="729.0" layoutY="529.0" mnemonicParsing="false" onAction="#addCommercialSpace" prefHeight="44.0" prefWidth="188.0" style="-fx-background-color: #7B61FF;" text="Add Commercial Space" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="12.0" layoutY="142.0" prefHeight="239.0" prefWidth="388.0">
+                           <children>
+                              <HBox blendMode="MULTIPLY" layoutX="3.0" layoutY="1.0" opacity="0.31" prefHeight="326.0" prefWidth="385.0" style="-fx-background-color: #020200;" />
+                              <Label layoutX="20.0" layoutY="101.0" prefHeight="38.0" prefWidth="104.0" text="Name:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato SemiBold" size="21.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="nameField" layoutX="160.0" layoutY="101.0" prefHeight="35.0" prefWidth="211.0" promptText="Enter User Name" />
+                              <Label layoutX="20.0" layoutY="152.0" prefHeight="38.0" prefWidth="124.0" text="Age:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato SemiBold" size="21.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="ageField" layoutX="160.0" layoutY="153.0" prefHeight="35.0" prefWidth="211.0" promptText="Enter Age" />
+                              <Label layoutX="21.0" layoutY="210.0" prefHeight="38.0" prefWidth="150.0" text="Add As Admin?" textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato SemiBold" size="21.0" />
+                                 </font>
+                              </Label>
+                              <CheckBox fx:id="adminCheck" layoutX="183.0" layoutY="217.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="62.0" text="Yes" textFill="WHITE">
+                                 <font>
+                                    <Font name="Lato SemiBold" size="16.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="114.0" layoutY="155.0" prefHeight="53.0" prefWidth="198.0" text="Add New User" textFill="#d3f985">
+                           <font>
+                              <Font name="Lato Black" size="29.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="table" layoutX="432.0" layoutY="143.0" opacity="0.85" prefHeight="397.0" prefWidth="635.0">
+                           <columns>
+                              <TableColumn fx:id="idTable" prefWidth="142.0" text="ID" />
+                              <TableColumn fx:id="nameTable" prefWidth="179.0" text="Name" />
+                              <TableColumn fx:id="ageTable" prefWidth="153.0" text="Age" />
+                              <TableColumn fx:id="adminTable" prefWidth="160.0" text="Admin" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RentNowController">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="937.0" layoutY="-1.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Lease3333333333333.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#e8e8e8" layoutX="363.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rent Now" wrappingWidth="417.0">
+         <font>
+            <Font name="Agency FB Bold" size="55.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="74.0" layoutY="96.0" opacity="0.7" prefHeight="332.0" prefWidth="785.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Button layoutX="80.0" layoutY="67.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #FFFFFF;" text="User ID">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="idField" layoutX="294.0" layoutY="63.0" prefHeight="38.0" prefWidth="287.0" />
+            <TextField fx:id="startDateField" layoutX="294.0" layoutY="167.0" prefHeight="38.0" prefWidth="287.0" />
+            <Button layoutX="102.0" layoutY="167.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #FFFFFF;" text="Lease Duration">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="datepicker" layoutX="294.0" layoutY="223.0" prefHeight="38.0" prefWidth="287.0" />
+            <Button layoutX="89.0" layoutY="221.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #FFFFFF;" text="Start Date">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="idField1" layoutX="295.0" layoutY="115.0" prefHeight="38.0" prefWidth="287.0" />
+            <Button layoutX="91.0" layoutY="116.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #FFFFFF;" text="Property ID">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="796.0" layoutY="36.0" mnemonicParsing="false" onAction="#switchToLogInOverview" prefHeight="29.0" prefWidth="112.0" style="-fx-background-color: #FFFFFF;" text="Log Out" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="399.0" layoutY="442.0" mnemonicParsing="false" onAction="#Done" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #FFFFFF;" text="Done" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="12.0" layoutY="36.0" mnemonicParsing="false" onAction="#switchToCommercialOverview" prefHeight="29.0" prefWidth="112.0" style="-fx-background-color: #FFFFFF;" text="Back" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

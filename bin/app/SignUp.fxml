@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LogInContorller">
+   <children>
+      <ImageView fitHeight="495.0" fitWidth="909.0" layoutY="-1.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngtree-d-illustration-of-a-retrowave-landscape-with-synthwave-wireframe-net-and-image_13572140.png" />
+         </image>
+      </ImageView>
+      <Text fill="#e8e8e8" layoutX="333.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="417.0">
+         <font>
+            <Font name="Agency FB Bold" size="55.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="240.0" layoutY="119.0" opacity="0.7" prefHeight="332.0" prefWidth="390.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Text fill="#5e5e5e" layoutX="107.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thanks For Choosing Us" wrappingWidth="208.0">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="21.0" layoutY="118.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="118.0" style="-fx-background-color: #FFFFFF;" text="Name">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="signUPname" layoutX="146.0" layoutY="123.0" prefHeight="14.0" prefWidth="227.0" />
+            <TextField fx:id="signUPAge" layoutX="146.0" layoutY="188.0" prefHeight="14.0" prefWidth="227.0" />
+            <Button layoutX="102.0" layoutY="251.0" mnemonicParsing="false" onAction="#signUp" prefHeight="48.0" prefWidth="187.0" style="-fx-background-color: #FFFFFF;" text="Sign Up">
+               <font>
+                  <Font name="Agency FB Bold" size="17.0" />
+               </font>
+            </Button>
+            <Text layoutX="65.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button layoutX="789.0" layoutY="36.0" mnemonicParsing="false" onAction="#switchToLogInOverview" prefHeight="29.0" prefWidth="112.0" style="-fx-background-color: #FFFFFF;" text="Go Back" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text fill="#e8e8e8" layoutX="229.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Property Management System" wrappingWidth="574.0">
+         <font>
+            <Font name="Agency FB Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="#e8e8e8" layoutX="508.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to" wrappingWidth="54.0">
+         <font>
+            <Font name="Agency FB Bold" size="40.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

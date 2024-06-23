@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CommercialSpaceController">
+   <children>
+      <ImageView fitHeight="530.0" fitWidth="913.0" layoutY="-1.0" opacity="0.85" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngtree-retro-office-header-3d-rendered-illustration-with-vintage-style-image_13571637.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="locationField" layoutX="282.0" layoutY="30.0" prefHeight="45.0" prefWidth="575.0" promptText="                                                                                    Location">
+         <font>
+            <Font name="Agency FB Bold" size="15.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="floorSpaceField" layoutX="282.0" layoutY="79.0" prefHeight="38.0" prefWidth="447.0" promptText="                                                                          Floor Space">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="632.0" layoutY="454.0" mnemonicParsing="false" onAction="#userAparment" prefHeight="38.0" prefWidth="227.0" style="-fx-background-color: #FFFFFF;" text="Apartments" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text fill="#e8e8e8" layoutX="22.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commercial" wrappingWidth="227.0">
+         <font>
+            <Font name="Agency FB Bold" size="55.0" />
+         </font>
+      </Text>
+      <Button layoutX="743.0" layoutY="79.0" mnemonicParsing="false" onAction="#searchCommercial" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #FFFFFF;" text="Search" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="511.0" layoutY="454.0" mnemonicParsing="false" onAction="#viewAllCommercial" prefHeight="38.0" prefWidth="108.0" style="-fx-background-color: #FFFFFF;" text="View All" textFill="#aeaeae">
+         <font>
+            <Font name="Agency FB Bold" size="13.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutY="131.0" opacity="0.7" prefHeight="290.0" prefWidth="168.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Button layoutX="-5.0" layoutY="111.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="169.0" style="-fx-background-color: #FFFFFF;" text="Rent Now">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutY="145.0" mnemonicParsing="false" onAction="#leaseOver" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: #FFFFFF;" text="Lease Over">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="-1.0" layoutY="182.0" mnemonicParsing="false" onAction="#switchToLogInOverview" prefHeight="29.0" prefWidth="147.0" style="-fx-background-color: #FFFFFF;" text="Log out">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Button>
+            <Text fill="#5e5e5e" layoutX="50.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Options" wrappingWidth="68.98828125">
+               <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fill="#e8e8e8" layoutX="71.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Space" wrappingWidth="227.0439453125">
+         <font>
+            <Font name="Agency FB Bold" size="55.0" />
+         </font>
+      </Text>
+      <TableView fx:id="table" layoutX="283.0" layoutY="131.0" opacity="0.85" prefHeight="290.0" prefWidth="575.0">
+        <columns>
+          <TableColumn fx:id="idTable" prefWidth="95.0" text="ID" />
+          <TableColumn fx:id="locationtable" prefWidth="171.0" text="Location" />
+            <TableColumn fx:id="floorspaceTable" prefWidth="81.0" text="Floor Space" />
+            <TableColumn fx:id="fireexitTable" prefWidth="61.0" text="Fire Exit" />
+            <TableColumn fx:id="rentTable" prefWidth="79.0" text="Rent" />
+            <TableColumn fx:id="availabilityTable" prefWidth="87.0" text="Availability" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
